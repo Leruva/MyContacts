@@ -13,10 +13,11 @@ const getContact = (req,res)=>{
 }
 
 //@desc Create contact
-//@route GET /api/contacts
+//@route POST /api/contacts
 //@access public
 const createContact = (req,res)=>{
-    res.status(200).json({message: "Create new contact"});
+    console.log("The request body is: ", req.body);
+    res.status(201).json({message: "Create new contact"});
 }
 
 //@desc Update contact
