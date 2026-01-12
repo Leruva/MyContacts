@@ -1,22 +1,24 @@
+const asyncHandler = require("express-async-handler");
+
 //@desc register user
 //@route POST /api/users/register
 //@access public
 
-const registerUser = ((req,res)=>{
+const registerUser = asyncHandler(async(req,res)=>{
     res.json({message: "Register the user"})
 });
 //@desc register user
 //@route POST /api/users/login
 //@access public
 
-const loginUser = ((req,res)=>{
+const loginUser = asyncHandler(async(req,res)=>{
     res.json({message: "login user"})
 });
 //@desc register user
 //@route POST /api/users/current
 //@access public
 
-const currentUser = ((req,res)=>{
+const currentUser = asyncHandler(async(req,res)=>{
     res.json({message: "current user"})
 });
 
