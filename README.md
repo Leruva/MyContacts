@@ -1,4 +1,4 @@
-# Contacts API
+# MyContacts
 A simple Node.js + Express REST API with MongoDB. It supports user authentication using JWT and lets each user manage their own contacts.
 
 ## Tech Stack
